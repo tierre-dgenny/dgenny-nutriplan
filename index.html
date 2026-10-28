@@ -203,7 +203,15 @@
   .imprensa { padding: 48px 0 72px; text-align: center; }
   .imprensa .dg-etiqueta { display: block; margin-bottom: 18px; }
   .imprensa-lista { display: flex; flex-wrap: wrap; gap: 10px 28px; justify-content: center; font-family: var(--dg-corpo);
-    font-weight: 600; font-size: .92rem; color: var(--dg-texto-suave); }
+    font-weight: 600; font-size: .92rem; }
+  .imprensa-lista a { color: var(--dg-texto-suave); text-decoration: none; border-bottom: 1px solid rgba(18,19,37,.2); }
+  .imprensa-lista a:hover { color: var(--dg-roxo); border-color: var(--dg-roxo); }
+
+  /* DEMONSTRACAO EM VIDEO */
+  .demo-video { position: relative; width: 100%; aspect-ratio: 16/9; border-radius: 18px; overflow: hidden;
+    border: 1px solid rgba(102,96,180,.2); background: #0b0c18; margin-top: 36px; }
+  .demo-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .demo-fallback { margin-top: 12px; font-size: .82rem; word-break: break-all; }
 
   /* ===== 5. EQUIPE E GOVERNANCA ===== */
   .lideranca-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 36px; }
@@ -353,6 +361,14 @@
           <div><h3 class="dg-h3">Validação e decisão final</h3><p class="dg-p">o comprador decide</p></div></div>
       </div>
     </div>
+
+    <!-- DEMONSTRACAO EM VIDEO -->
+    <span class="subtitulo-bloco">Demonstração</span>
+    <h2 class="dg-h2">Veja a assistente <span class="dg-destaque">trabalhando</span></h2>
+    <div class="demo-video">
+      <iframe src="https://drive.google.com/file/d/1lhPL-y5pHE7bY0lhG_AMAvkHMe7Sjl4N/preview" title="Demonstração da assistente dgenny" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p class="dg-p demo-fallback">Se o vídeo não abrir aqui: https://drive.google.com/file/d/1lhPL-y5pHE7bY0lhG_AMAvkHMe7Sjl4N/view</p>
   </div>
 </section>
 
@@ -417,7 +433,7 @@
   <div class="wrap">
     <span class="dg-etiqueta">dgenny® na mídia</span>
     <div class="imprensa-lista">
-      <span>Gazeta do Povo</span><span>NSC Total</span><span>TechSC · Globoplay</span><span>NeoFeed</span>
+      <a href="https://www.gazetadopovo.com.br/vozes/parana-sa/inteligencia-artificial-incorporadoras-curitiba/" target="_blank" rel="noopener">Gazeta do Povo</a><a href="https://www.nsctotal.com.br/colunistas/estela-benetti/startup-lanca-a-dgenny-uma-agente-de-ia-que-pesquisa-precos-de-materiais-de-construcao" target="_blank" rel="noopener">NSC Total</a><span>TechSC · Globoplay</span><a href="https://neofeed.com.br/startups/whatsapp-a-obra-startup-cria-superagente-de-compras-a-abseed-comprou-a-ideia/" target="_blank" rel="noopener">NeoFeed</a>
     </div>
   </div>
 </section>
